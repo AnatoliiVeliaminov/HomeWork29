@@ -10,7 +10,7 @@ function Site_source_code($domain){
     }
     $desk_url = curl_init($domain);
     curl_setopt  ($desk_url, CURLOPT_RETURNTRANSFER, 1);
-    $return_result = curl_exec($desk_url); // выполняем запрос curl
+    $return_result = curl_exec($desk_url);
     curl_close($desk_url);
 
     return $return_result;
